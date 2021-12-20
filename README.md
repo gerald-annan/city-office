@@ -147,6 +147,7 @@ The typespec should explain that the function accepts two arguments, a string an
 For some unknown to you reason, the city office's internal system uses two different ways of representing addresses - either as a map or as a tuple.
 
 Document this fact by defining three custom public types:
+
 - `address_map` - a map with the keys `:street`, `:postal_code`, and `:city`. Each key holds a value of type string.
 - `address_tuple` - a tuple with three values - `street`, `postal_code`, and `city`. Each value is of type string. Differentiate the values by giving them names in the typespec.
 - `address` - can be either an `address_map` or an `address_tuple`.
@@ -162,6 +163,10 @@ Formats the address as an uppercase multiline string.
 The typespec should explain that the function accepts one argument, an address, and returns a string.
 
 ## Source
+
+### Solved by
+
+- @gerald-annan
 
 ### Created by
 
